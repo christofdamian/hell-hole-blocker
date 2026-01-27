@@ -1,0 +1,11 @@
+# Ignore development and packaging files
+package.json
+package-lock.json
+tests/
+.gitignore
+.web-ext-ignore
+
+# Ignore generated packages
+*.zip
+*.xpi
+web-ext-artifacts/
