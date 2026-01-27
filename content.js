@@ -44,7 +44,11 @@ function processNode(node) {
 function isTwitterUrl(url) {
     try {
         const urlObj = new URL(url);
-        return urlObj.hostname.includes('twitter.com') || urlObj.hostname.includes('x.com');
+        const hostname = urlObj.hostname;
+        return hostname === 'twitter.com' || 
+               hostname.endsWith('.twitter.com') || 
+               hostname === 'x.com' || 
+               hostname.endsWith('.x.com');
     } catch (e) {
         return false;
     }
@@ -65,7 +69,7 @@ function checkAndReplaceLink(link) {
 }
 
 function checkAndReplaceIframe(iframe) {
-    if (iframe.src && (iframe.src.includes('twitter.com') || iframe.src.includes('x.com'))) {
+    if (iframe.src && isTwitterUrl(iframe.src)) {
         replaceElement(iframe, true);
     }
 }
@@ -86,3 +90,7 @@ observer.observe(document.body, {
     childList: true,
     subtree: true
 });
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { isTwitterUrl };
+}

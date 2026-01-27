@@ -1,0 +1,24 @@
+{
+  "name": "hellhole",
+  "version": "1.0.0",
+  "description": "This is a Firefox extension that replaces all links and embeds pointing to Twitter (twitter.com) or X (x.com) with a \"HELL HOLE AVOIDED\" placeholder.",
+  "main": "content.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christofdamian/hell-hole-blocker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christofdamian/hell-hole-blocker/issues"
+  },
+  "homepage": "https://github.com/christofdamian/hell-hole-blocker#readme",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
+  }
+}
