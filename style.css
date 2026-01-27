@@ -1,0 +1,43 @@
+.twitter-hellhole-placeholder {
+    background-color: #1a0000;
+    color: #ff3300;
+    border: 2px solid #ff0000;
+    padding: 4px 8px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: not-allowed;
+    box-shadow: 0 0 5px #ff0000;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.twitter-hellhole-placeholder:hover {
+    box-shadow: 0 0 10px #ff0000, inset 0 0 10px #500000;
+    text-shadow: 0 0 5px #ff3300;
+    transform: scale(1.02);
+}
+
+.twitter-hellhole-placeholder::before {
+    content: "🔥";
+}
+
+.twitter-hellhole-placeholder::after {
+    content: "🔥";
+}
+
+/* Specific style for block replacements (like embeds) */
+.twitter-hellhole-placeholder.block-replacement {
+    display: flex;
+    padding: 20px;
+    margin: 10px 0;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}

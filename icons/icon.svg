@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="black" stroke="red" stroke-width="5" />
+  <path d="M50 10 Q 90 50 50 90 Q 10 50 50 10" fill="red" opacity="0.8">
+    <animate attributeName="d" values="M50 10 Q 90 50 50 90 Q 10 50 50 10; M50 5 Q 95 50 50 95 Q 5 50 50 5; M50 10 Q 90 50 50 90 Q 10 50 50 10" dur="2s" repeatCount="indefinite" />
+  </path>
+  <text x="50" y="55" font-family="sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">HELL</text>
+  <text x="50" y="68" font-family="sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">HOLE</text>
+</svg>
