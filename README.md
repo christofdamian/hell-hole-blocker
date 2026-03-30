@@ -1,3 +1,6 @@
+⚠️ **This repository has moved to Codeberg: https://codeberg.org/cdamian/hell-hole-blocker**
+
+This GitHub repository is archived and no longer maintained here.
 # Twitter Hellhole Extension
 
 This is a Firefox extension that replaces all links and embeds pointing to Twitter (twitter.com) or X (x.com) with a "HELL HOLE AVOIDED" placeholder.
